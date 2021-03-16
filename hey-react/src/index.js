@@ -3,15 +3,50 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Layout from './App2';
+import Progress from './Process';
+
+
+function Apps(props){
+  return(
+    <div>
+     
+    <button style={{marginTop:"5%"}} onClick={props.handleClick}>{props.name}</button>
+    <br/>
+    </div>
+  );
+}
+var count = 0;
+const printMessage=()=>{
+
+  count = count+1;
+  document.getElementById('show-area').innerHTML = "被我按到了";
+  document.getElementById('count-area').innerHTML = count;
+}
+
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Apps name="計算數字+1" handleClick={printMessage}/>
+    
+    <Layout>
+    
+    </Layout>
+    <div id="show-area"></div>
+    <div id="count-area"></div>
+    <div>
+      <hr/>
+      <h1 id="Button-66">按鈕666</h1>
+    </div>
+    <div>
+      <Progress/>
+    </div>
+  </div>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+
 reportWebVitals();
