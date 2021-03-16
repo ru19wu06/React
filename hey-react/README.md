@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+## 步驟一
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- npx create-react-app 
+- npm start
 
-## Available Scripts
+## 步驟二
 
-In the project directory, you can run:
+- 上傳Github 開啟Gitpage
 
-### `yarn start`
+## 步驟三
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- git add .
+- git commit -m "AAA" <!-- 輸入註解 -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 步驟四
 
-### `yarn test`
+- git remote add origin git@github.com:PJCHENder/realtime-weather-app.git
+- git push -u origin master
+<!-- 更新推入原始檔案中 -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 步驟五 - 重點
 
-### `yarn build`
+- 在專案的 package.json 中加入 homepage 欄位，裡面放入 Github Page 的網址
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+// package.json
+{
+  "name": "realtime-weather-app",
+  "homepage": "https://myusername.github.io/my-app",
+  // ...
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 步驟六 - 重點二
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- npm install --save gh-pages
+<!-- 添加Github page 管理套件 gh-pages -->
 
-### `yarn eject`
+## 步驟七 - 重點三
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- package.json 檔案中的 scripts 欄位中添加以下指令
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// package.json
+{
+  "scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    // ...
+  }
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- 確認上面資訊都打對，很重要 -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## 最後步驟 推上Github
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- npm run deploy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 更改分支
 
-### Code Splitting
+- 到github上更改分支，結束開始運作
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 如果有問題爆錯資訊會寄到信箱
