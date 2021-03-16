@@ -14,7 +14,7 @@
 
 ## 步驟四
 
-- git remote add origin git@github.com:PJCHENder/realtime-weather-app.git
+- git remote add origin git@github.com:PJCHENder/hey-react.git
 - git push -u origin master
 <!-- 更新推入原始檔案中 -->
 
