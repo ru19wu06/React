@@ -13,8 +13,13 @@ const Progress =()=>{
         <div>
             <div className="progress-back" style={{backgroundColor:"rgba(0,0,0,0.2)",width:"200px",height:"7px",borderRadius:"10px"}}>
             <div className="progress-bar" style={{backgroundColor:"#fe5196",width:percent,height:"100%",borderRadius:"10px"}}></div>
+            <div>
+                <h2>血量 : {}</h2>
+            </div>
             
             </div>
+            <br/>
+            <br/>
             <br/>
            {/* <button onClick={()=>{changePercent("70%")}}>轉換百分比</button> */}
            <button onClick={()=>{
@@ -34,8 +39,9 @@ const Progress =()=>{
                 
                changePercent(afet)}
             }>轉換百分比並做一些酷酷的事情</button>
-        <br/>
-        <br/>
+            <hr/>
+     
+      
             <div style={{backgroundColor:"rgb(255,215,0)",width:"200px",height:"70px",borderRadius:"5px"}}>
                 <h1 style={{marginLeft:"25%",marginTop:"20%"}} id="character-poster"></h1>
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Method from './setMethod.js';
 import reportWebVitals from './reportWebVitals';
 import Layout from './App2';
 import Progress from './Process';
@@ -26,6 +27,30 @@ const printMessage=()=>{
 
 
 
+function Addh1(props){
+  return <h1>Hello,{props.name}</h1>
+    
+  
+}
+function Addh2(props){
+  return <h1>Hello,Age{props.age}</h1>
+    
+  
+}
+
+function Postline(){
+  return(
+    <div>
+    <Addh1 name="Team" age='10'/>
+    <Addh1 name="Justen" age='10'/>
+    <Addh2 name="Frank" age='10'/>
+    </div>
+
+  )
+}
+
+
+
 
 ReactDOM.render(
   <div>
@@ -43,6 +68,10 @@ ReactDOM.render(
     <div>
       <Progress/>
     </div>
+    <div>
+      <Method/>
+    </div>
+    <Postline/>
   </div>,
   document.getElementById('root')
 );
