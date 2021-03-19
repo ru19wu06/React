@@ -6,6 +6,7 @@ import Method from './setMethod.js';
 import reportWebVitals from './reportWebVitals';
 import Layout from './App2';
 import Progress from './Process';
+import Methodpage from './MathodPage';
 
 
 function Apps(props){
@@ -68,10 +69,12 @@ ReactDOM.render(
     <div>
       <Progress/>
     </div>
+    <br/>
     <div>
-      <Method/>
+     
+      <Methodpage/>
     </div>
-    <Postline/>
+    {/* <Postline/> */}
   </div>,
   document.getElementById('root')
 );
@@ -79,3 +82,4 @@ ReactDOM.render(
 
 
 reportWebVitals();
+ /* <Method/> */
