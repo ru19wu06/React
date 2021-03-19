@@ -10,13 +10,13 @@
 ## 步驟三
 
 - git add .
-- git commit -m "AAA" <!-- 輸入註解 -->
+- git commit -m "AAA" (輸入註解)
 
 ## 步驟四
 
 - git remote add origin git@github.com:PJCHENder/hey-react.git
 - git push -u origin master
-<!-- 更新推入原始檔案中 -->
+(更新推入原始檔案中) 
 
 ## 步驟五 - 重點
 
@@ -32,7 +32,7 @@
 ## 步驟六 - 重點二
 
 - npm install --save gh-pages
-<!-- 添加Github page 管理套件 gh-pages -->
+(添加Github page 管理套件 gh-pages)
 
 ## 步驟七 - 重點三
 
@@ -49,7 +49,7 @@
   }
 }
 
-<!-- 確認上面資訊都打對，很重要 -->
+(確認上面資訊都打對，很重要)
 
 
 ## 最後步驟 推上Github
