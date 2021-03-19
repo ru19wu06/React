@@ -74,7 +74,10 @@ ReactDOM.render(
      
       <Methodpage/>
     </div>
-    {/* <Postline/> */}
+    <div>
+      
+    </div>
+   
   </div>,
   document.getElementById('root')
 );
@@ -83,3 +86,4 @@ ReactDOM.render(
 
 reportWebVitals();
  /* <Method/> */
+ /* <Postline/> */
