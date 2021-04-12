@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Layout from './App2';
 import Progress from './Process';
 import Methodpage from './MathodPage';
+import Home from "./pages/Home";
 
 
 function Apps(props){
@@ -71,11 +72,12 @@ ReactDOM.render(
     </div>
     <br/>
     <div>
-     
       <Methodpage/>
     </div>
     <div>
-      
+      <React.StrictMode>
+        <Home/>
+      </React.StrictMode>
     </div>
    
   </div>,
