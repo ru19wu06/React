@@ -71,9 +71,7 @@ ReactDOM.render(
       <Progress/>
     </div>
     <br/>
-    <div>
-      <Methodpage/>
-    </div>
+  
     <div>
       <React.StrictMode>
         <Home/>
