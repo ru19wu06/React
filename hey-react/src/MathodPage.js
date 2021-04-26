@@ -19,7 +19,8 @@ handleClick(){
         this.setState({repoName2: data[0]['node_id']});
         this.setState({repoName3: data[0]['name']});
         this.setState({repoName4: data[0]['full_name']});
-        this.setState({repoName5: data[0]['private']});
+        this.setState({repoName5: data[0]['description']});
+        
     })
     .catch(e =>{
         console.log(e);

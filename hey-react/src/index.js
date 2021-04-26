@@ -71,7 +71,7 @@ ReactDOM.render(
       <Progress/>
     </div>
     <br/>
-  
+   
     <div>
       <React.StrictMode>
         <Home/>
