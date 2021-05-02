@@ -54,33 +54,7 @@ function Postline(){
 
 
 
-ReactDOM.render(
-  <div>
-    <Apps name="計算數字+1" handleClick={printMessage}/>
-    
-    <Layout>
-    
-    </Layout>
-    <div id="show-area"></div>
-    <div id="count-area"></div>
-    <div>
-      <hr/>
-      <h1 id="Button-66">按鈕666</h1>
-    </div>
-    <div>
-      <Progress/>
-    </div>
-    <br/>
-   
-    <div>
-      <React.StrictMode>
-        <Home/>
-      </React.StrictMode>
-    </div>
-   
-  </div>,
-  document.getElementById('root')
-);
+
 
 
 
