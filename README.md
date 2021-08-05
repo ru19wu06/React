@@ -1,7 +1,3 @@
 # React
 
-- 練習React建置
-
-- 設計小遊戲
-
-- 設計簡單的區塊鏈互動
+現在不搞React 那些毛了  只做Dashboard
