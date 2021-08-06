@@ -1,2 +1,2 @@
 (this["webpackJsonphey-react"]=this["webpackJsonphey-react"]||[]).push([[0],{19:function(n,t,o){},20:function(n,t,o){},23:function(n,t,o){},24:function(n,t,o){"use strict";o.r(t);var e=o(1),c=(o(15),o(19),o(4)),i=o(5),s=o(2),p=o(7),u=o(6),a=(o(20),o(0)),h=(e.Component,e.Component,function(n){n&&n instanceof Function&&o.e(3).then(o.bind(null,27)).then((function(t){var o=t.getCLS,e=t.getFID,c=t.getFCP,i=t.getLCP,s=t.getTTFB;o(n),e(n),c(n),i(n),s(n)}))});o(3),e.Component,o(9),o(12),"".concat("http://localhost:3000","/posts/1"),o(13),o(26),o(23);h()}},[[24,1,2]]]);
-//# sourceMappingURL=main.7d668c33.chunk.js.map
+//# sourceMappingURL=main.fa0d2720.chunk.js.map
